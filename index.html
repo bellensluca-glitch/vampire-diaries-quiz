@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10090c">
+    <title>The Mystic Falls Personality Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="background-glow"></div>
+    <div class="grain"></div>
+
+    <main class="app">
+
+        <header class="topbar">
+            <div class="brand">MYSTIC FALLS</div>
+            <div class="edition">THE PERSONALITY TEST</div>
+        </header>
+
+        <section id="startScreen" class="screen start-screen">
+            <p class="eyebrow">SOME SECRETS NEVER STAY BURIED</p>
+
+            <h1>
+                WHICH SOUL<br>
+                <span>ARE YOU?</span>
+            </h1>
+
+            <div class="ornament">✦ ━━━━━ ✦</div>
+
+            <p class="intro">
+                Iedereen heeft een duister kantje.
+                Sommige mensen verbergen het beter dan anderen.
+                Ontdek welk personage uit Mystic Falls het meest
+                overeenkomt met jouw persoonlijkheid.
+            </p>
+
+            <div class="test-info">
+                <span>25 VRAGEN</span>
+                <span>9 PERSONAGES</span>
+                <span>1 PERSOONLIJKHEID</span>
+            </div>
+
+            <button id="startButton" class="main-button">
+                ONTDEK JE LOT <span>→</span>
+            </button>
+
+            <p class="small-note">MYSTIC FALLS IS WATCHING.</p>
+        </section>
+
+        <section id="quizScreen" class="screen quiz-screen" hidden>
+
+            <div class="quiz-heading">
+                <p class="eyebrow">YOUR STORY BEGINS</p>
+                <p id="questionNumber">QUESTION 01 / 25</p>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar"></div>
+            </div>
+
+            <div class="question-area">
+                <p class="question-category" id="questionCategory">
+                    PERSONALITY
+                </p>
+
+                <h2 id="question"></h2>
+
+                <div id="answers" class="answers"></div>
+            </div>
+
+            <p class="small-note">KIES HET ANTWOORD DAT HET BEST BIJ JE PAST.</p>
+        </section>
+
+        <section id="resultScreen" class="screen result-screen" hidden>
+
+            <p class="eyebrow">THE TRUTH HAS BEEN REVEALED</p>
+
+            <h1 class="result-heading">YOUR <span>DESTINY</span></h1>
+
+            <div class="ornament">✦ ━━━━━ ✦</div>
+
+            <p class="result-label">JOUW STERKSTE MATCH</p>
+            <h2 id="resultName"></h2>
+            <p id="resultDescription" class="result-description"></p>
+
+            <div class="divider"></div>
+
+            <h3 class="matches-heading">YOUR TOP THREE</h3>
+            <div id="matches" class="matches"></div>
+
+            <button id="restartButton" class="main-button">
+                SPEEL OPNIEUW <span>↻</span>
+            </button>
+
+            <p class="small-note">SOME DESTINIES CANNOT BE ESCAPED.</p>
+        </section>
+
+        <footer>
+            <span>AN UNOFFICIAL FAN-MADE QUIZ</span>
+            <span>WELCOME TO MYSTIC FALLS</span>
+        </footer>
+
+    </main>
+
+</body>
+</html>
