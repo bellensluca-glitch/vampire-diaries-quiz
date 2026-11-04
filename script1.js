@@ -388,7 +388,7 @@ function calculateMatches() {
     return [
         { name: "Klaus", difference: 0 },
         { name: "Damon", difference: 1 },
-        { name: "Stefan", difference: 2 }
+        { name: "Bonnie", difference: 2 }
     ];
 }
 function showResult() {
