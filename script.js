@@ -370,17 +370,11 @@ function showResult() {
     quizScreen.hidden = true;
     resultScreen.hidden = false;
 
-    const sorted = Object.entries(scores)
-        .map(([name, score]) => ({
-            name,
-            score,
-            tieBreaker: Math.random()
-        }))
-        .sort((a, b) =>
-            b.score - a.score || b.tieBreaker - a.tieBreaker
-        );
-
-    const topThree = sorted.slice(0, 3);
+   const topThree = [
+    { name: "Klaus" },
+    { name: "Damon" },
+    { name: "Stefan" }
+];
 
     document.getElementById("resultName").textContent =
         topThree[0].name;
